@@ -1,0 +1,50 @@
+# =============================================
+# Script R : Comptage cellulaire
+# =============================================
+
+# =======================
+# PARAMÈTRES À MODIFIER
+# =======================
+
+# Volumes (mL)
+___(B)___   # volume de l'échantillon
+___(C)___   # volume de bleu trypan ajouté
+
+# Comptages par ligne (vecteurs de 10 valeurs)
+___(E)___   # cellules vivantes
+___(F)___   # cellules mortes
+
+# Nombre de cellules à ensemencer dans la culture
+___(L)___
+
+# =============================================
+# CALCULS AUTOMATIQUES
+# =============================================
+
+# 1) Dilution
+___(D)___
+
+# 2) Moyennes et viabilité
+___(G)___
+___(H)___
+___(I)___
+
+# 3) Nombre de cellules vivantes par mL
+___(K)___
+
+# 4) Calcul du volume à prélever pour x cellules
+___(M)___
+
+# =============================================
+# RESULTATS
+# =============================================
+
+# Affichage viabilité
+cat("Viabilité (%) :", round(___(J)___ ,2), "\n")
+
+# Affichage concentration originale
+cat("Concentration originale (cellules/mL) :", round(___(K)___ ), "\n")
+
+# Affichage du volume
+cat("Volume à prélever pour", cell_cible, "cellules :", round(___(M)___ *1000,2), "µL\n")
+
